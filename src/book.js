@@ -35,8 +35,8 @@ var book = {
 }
 
 function editBook(title) {
-var newTitle = 3/4 * calculatePageCount(title);
-return newTitle
+title.pageCount = title.pageCount * 0.75;
+return title;
 }
 
 
