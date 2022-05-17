@@ -17,13 +17,13 @@ function unshelfBook(title, shelf) {
 function listTitles(book) {
   var titles = []
   for (var i = 0; i < 3; i++) {
-titles.push(book[i].title);
+    titles.push(book[i].title);
 }
 return titles.join(', ');
 };
 
 function searchShelf(shelf, book) {
-var onShelf = false
+  var onShelf = false
   for (var i = 0; i < shelf.length; i++) {
    if (shelf[i].title === book) {
      onShelf = true
